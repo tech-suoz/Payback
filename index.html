@@ -262,18 +262,26 @@
                         <div class="glass-form animated-glass p-4 w-100" data-aos="zoom-in">
                             <h5 class="text-white text-center mb-2">Start Here</h5>
                             <h4 class="text-white text-center mb-4 fw-bold">Secure a Free Consultation</h4>
-                            <form>
+
+                            <!-- FORM WITH FormSubmit -->
+                            <form action="https://formsubmit.co/Afxfinance.com@gmail.com" method="POST">
+                                <!-- Optional: Prevent spam -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                        <input type="text" class="form-control" name="first_name"
+                                            placeholder="First Name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Last Name" required>
+                                        <input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                                            required>
                                     </div>
                                 </div>
 
                                 <div class="form-group mb-3 mt-3 phone-group">
-                                    <select class="country-code" required>
+                                    <select class="country-code" name="country_code" required>
                                         <option value="" disabled selected>+ Country Code</option>
                                         <option value="+1">🇺🇸 +1 (USA)</option>
                                         <option value="+44">🇬🇧 +44 (UK)</option>
@@ -283,29 +291,30 @@
                                         <option value="+81">🇯🇵 +81 (Japan)</option>
                                         <!-- Add more as needed -->
                                     </select>
-                                    <input type="tel" class="form-control phone-number" placeholder="812 345 6789"
+                                    <input type="tel" class="form-control phone-number" name="phone_number"
+                                        placeholder="812 345 6789" required>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <input type="email" class="form-control" name="email" placeholder="Email Address"
                                         required>
                                 </div>
 
                                 <div class="form-group mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Amount Lost (e.g. $3,000)"
-                                        required>
+                                    <input type="text" class="form-control" name="amount_lost"
+                                        placeholder="Amount Lost (e.g. $3,000)" required>
                                 </div>
 
                                 <div class="form-group mb-4">
-                                    <textarea class="form-control" rows="4" placeholder="Outline your case..."
-                                        required></textarea>
+                                    <textarea class="form-control" name="case_details" rows="4"
+                                        placeholder="Outline your case..." required></textarea>
                                 </div>
 
                                 <button type="submit" class="btn btn-glass w-100">Get a Free Consultation</button>
                             </form>
                         </div>
-
                     </div>
+
 
 
                 </div>
