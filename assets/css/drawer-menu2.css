@@ -152,6 +152,7 @@ body.show-sidebar-drawer #sidebar-drawer {
     border-radius: 10px;
     box-shadow: 0 1px 50px 1px rgb(0 0 0 / 20%);
     background: var(--e-global-color-white);
+    font-weight: 600;
 }
 #sidebar-drawer .treeview-menu li a i {
     font-size: 8px;
